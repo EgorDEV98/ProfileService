@@ -31,12 +31,12 @@ namespace ProfileService.Data.Migrations
                     b.Property<DateTimeOffset>("CreatedDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
-                        .HasDefaultValue(new DateTimeOffset(new DateTime(2024, 12, 8, 10, 53, 30, 788, DateTimeKind.Unspecified).AddTicks(5195), new TimeSpan(0, 3, 0, 0, 0)));
+                        .HasDefaultValue(new DateTimeOffset(new DateTime(2024, 12, 8, 15, 16, 49, 20, DateTimeKind.Unspecified).AddTicks(1855), new TimeSpan(0, 3, 0, 0, 0)));
 
                     b.Property<DateTimeOffset>("LastUpdate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
-                        .HasDefaultValue(new DateTimeOffset(new DateTime(2024, 12, 8, 10, 53, 30, 788, DateTimeKind.Unspecified).AddTicks(5557), new TimeSpan(0, 3, 0, 0, 0)));
+                        .HasDefaultValue(new DateTimeOffset(new DateTime(2024, 12, 8, 15, 16, 49, 20, DateTimeKind.Unspecified).AddTicks(2225), new TimeSpan(0, 3, 0, 0, 0)));
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -69,7 +69,7 @@ namespace ProfileService.Data.Migrations
                     b.Property<DateTimeOffset>("LastUpdate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
-                        .HasDefaultValue(new DateTimeOffset(new DateTime(2024, 12, 8, 10, 53, 30, 788, DateTimeKind.Unspecified).AddTicks(6177), new TimeSpan(0, 3, 0, 0, 0)));
+                        .HasDefaultValue(new DateTimeOffset(new DateTime(2024, 12, 8, 15, 16, 49, 20, DateTimeKind.Unspecified).AddTicks(2919), new TimeSpan(0, 3, 0, 0, 0)));
 
                     b.Property<int>("VersionNumber")
                         .HasColumnType("integer");

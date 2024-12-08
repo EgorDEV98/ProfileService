@@ -19,8 +19,8 @@ namespace ProfileService.Data.Migrations
                     Name = table.Column<string>(type: "text", nullable: false),
                     Password = table.Column<string>(type: "text", nullable: false),
                     TinkoffApiKey = table.Column<string>(type: "text", nullable: false),
-                    CreatedDate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false, defaultValue: new DateTimeOffset(new DateTime(2024, 12, 8, 10, 53, 30, 788, DateTimeKind.Unspecified).AddTicks(5195), new TimeSpan(0, 3, 0, 0, 0))),
-                    LastUpdate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false, defaultValue: new DateTimeOffset(new DateTime(2024, 12, 8, 10, 53, 30, 788, DateTimeKind.Unspecified).AddTicks(5557), new TimeSpan(0, 3, 0, 0, 0)))
+                    CreatedDate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false, defaultValue: new DateTimeOffset(new DateTime(2024, 12, 8, 15, 16, 49, 20, DateTimeKind.Unspecified).AddTicks(1855), new TimeSpan(0, 3, 0, 0, 0))),
+                    LastUpdate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false, defaultValue: new DateTimeOffset(new DateTime(2024, 12, 8, 15, 16, 49, 20, DateTimeKind.Unspecified).AddTicks(2225), new TimeSpan(0, 3, 0, 0, 0)))
                 },
                 constraints: table =>
                 {
@@ -34,7 +34,7 @@ namespace ProfileService.Data.Migrations
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     VersionNumber = table.Column<int>(type: "integer", nullable: false),
                     IsInstalled = table.Column<bool>(type: "boolean", nullable: false, defaultValue: false),
-                    LastUpdate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false, defaultValue: new DateTimeOffset(new DateTime(2024, 12, 8, 10, 53, 30, 788, DateTimeKind.Unspecified).AddTicks(6177), new TimeSpan(0, 3, 0, 0, 0)))
+                    LastUpdate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false, defaultValue: new DateTimeOffset(new DateTime(2024, 12, 8, 15, 16, 49, 20, DateTimeKind.Unspecified).AddTicks(2919), new TimeSpan(0, 3, 0, 0, 0)))
                 },
                 constraints: table =>
                 {
