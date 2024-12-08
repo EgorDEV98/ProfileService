@@ -14,7 +14,10 @@ builder.Services.AddControllers().AddJsonOptions(op =>
     op.JsonSerializerOptions.Converters.Add(new JsonStringEnumMemberConverter());
     op.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
 });
+builder.Services.AddConfigurations(builder.Configuration);
 builder.Services.AddPostgresDbContext(builder.Configuration);
+builder.Services.AddServices();
+
 builder.Services.AddHealthChecks().AddCheck<PostgresHealthCheck>("PostgresHealthCheck");
 
 var app = builder.Build();

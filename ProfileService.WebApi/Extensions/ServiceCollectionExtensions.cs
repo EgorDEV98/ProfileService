@@ -1,14 +1,28 @@
 ﻿using System.Reflection;
+using FluentAssertions.Common;
 using ProfileService.Application.Common;
+using ProfileService.Application.Configurations;
+using ProfileService.Application.Services;
 using ProfileService.WebApi.Common;
 
 namespace ProfileService.WebApi.Extensions;
 
 public static class ServiceCollectionExtensions
 {
+    public static IServiceCollection AddConfigurations(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.Configure<EncryptionOptions>(configuration.GetSection(nameof(EncryptionOptions)));
+
+        return services;
+    }
+    
     public static IServiceCollection AddServices(this IServiceCollection services)
     {
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+        services.AddSingleton<IEncryptor, AesEncryptor>();
+        
+        services.AddScoped<ProfilesService>();
+        services.AddScoped<SystemService>();
 
         return services;
     }

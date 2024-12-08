@@ -25,11 +25,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
+      <ProjectReference Include="..\ProfileService.Application\ProfileService.Application.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ProfileService.Application\ProfileService.Application.csproj" />
+      <Folder Include="Configurations\" />
     </ItemGroup>
 
 </Project>
